@@ -1,63 +1,35 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DOM Practice</title>
-    <style>
-        body {
-            text-align: center;
-            margin-top: 50px;
-        }
-        button {
-            margin: 5px;
-            padding: 10px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPERIMENT-6</title>
+    <link rel="stylesheet" href="Exp6.css">
 </head>
 <body>
+  
+ <div class="container">
+    <h2 id="mainHeading">Welcome to JavaScript Lab</h2>
 
-    <h1 id="heading">Hello World</h1>
-    <p id="para">This is a paragraph</p>
-
-    <input type="text" id="inputText" placeholder="Enter heading text">
+    <input type="text" id="userInput" placeholder="Enter new heading text">
 
     <br><br>
 
-    <button onclick="changeColor()">Change BG Color</button>
-    <button onclick="changeHeading()">Change Heading</button>
-    <button onclick="increaseFont()">Increase Font</button>
-    <button onclick="togglePara()">Show/Hide Paragraph</button>
+    <button id="changeTextBtn">Change Heading</button>
+    <button id="bgColorBtn">Change Background</button>
+    <button id="fontSizeBtn">Increase Font Size</button>
+    <button id="toggleBtn">Show/Hide Paragraph</button>
+    <button id="resetBtn">Reset</button>
 
-    <script>
-        let colors = ["red", "blue", "green", "yellow", "pink", "orange"];
-        let index = 0;
+    <p id="paragraph">
+        This is a sample paragraph. JavaScript events can dynamically change content.
+    </p>
+</div>
+<footer style="text-align:center; margin-top:20px;">
+    Name: Shiv Kumar | Roll No: 2503201001073
+</footer>
 
-        function changeColor() {
-            document.body.style.backgroundColor = colors[index];
-            index = (index + 1) % colors.length;
-        }
 
-        function changeHeading() {
-            let input = document.getElementById("inputText").value;
-            document.getElementById("heading").innerText = input;
-        }
-
-        function increaseFont() {
-            let h1 = document.getElementById("heading");
-            let size = window.getComputedStyle(h1).fontSize;
-            size = parseInt(size);
-            h1.style.fontSize = (size + 5) + "px";
-        }
-
-        function togglePara() {
-            let para = document.getElementById("para");
-            if (para.style.display === "none") {
-                para.style.display = "block";
-            } else {
-                para.style.display = "none";
-            }
-        }
-    </script>
-
+    <script src="Exp6.js"></script>
 </body>
-</html>\ 
+</html>
