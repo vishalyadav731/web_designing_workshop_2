@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTA Vice City</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #ff0080, #7928ca);
+            color: white;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 50px;
+            background: rgba(0,0,0,0.6);
+        }
+
+        header h1{
+            font-size:28px;
+            letter-spacing:2px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            background:url("https://wallpapercave.com/wp/wp2006903.jpg") no-repeat center center/cover;
+        }
+
+        .hero h2{
+            font-size:60px;
+            text-shadow:2px 2px 10px black;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin:20px 0;
+            text-shadow:2px 2px 10px black;
+        }
+
+        .btn{
+            padding:12px 25px;
+            font-size:18px;
+            border:none;
+            background:#ff0080;
+            color:white;
+            cursor:pointer;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#000;
+        }
+
+        .about{
+            padding:60px 50px;
+            text-align:center;
+            background:#111;
+        }
+
+        .about h3{
+            font-size:35px;
+            margin-bottom:20px;
+        }
+
+        .about p{
+            font-size:18px;
+            max-width:800px;
+            margin:auto;
+            line-height:1.6;
+        }
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:15px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GTA Vice City</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Download</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Vice City</h2>
+    <p>Experience the 80s crime world adventure</p>
+    <button class="btn">Download Now</button>
+</section>
+
+<section class="about">
+    <h3>About The Game</h3>
+    <p>
+        Grand Theft Auto: Vice City is an open-world action-adventure game set in the 1980s.
+        Explore the neon city, complete missions, drive amazing cars, and build your empire.
+    </p>
+</section>
+
+<footer>
+    © 2026 GTA Vice City | Designed by Vishal
+</footer>
+
+</body>
+</html>
