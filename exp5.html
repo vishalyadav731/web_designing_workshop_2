@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Exp5.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Employee Salary Management System</h2>
+        <input type="text" id="empName" placeholder="Employee Name"/>
+        <input type="text" id="empId" placeholder="Employee ID"/>
+        <input type="number" id="empSalary" placeholder="Employee Salary"/>
+        <input type="text" id="empDep" placeholder="Department"/>
+
+        <button onclick="addEmployee()">Add Employee</button>
+        <div>
+        <button onclick="displayAll()">Display All</button>
+        <button onclick="salaryOver5000()">Salary > 5000</button>
+        <button onclick="totalSalary()">Total Salary</button>
+        <button onclick="averageSalary()">Average Salary</button>
+        </div>
+        <button onclick="count()">Count by Department</button>
+
+        <div id="output"></div>
+        <footer style="text-align:center; margin-top:20px;">
+         Name: Shiv Kumar | Roll No: 2503201001073
+        </footer>
+        
+    </div>
+    <script src="Exp5.js"></script>
+</body>
+</html>
